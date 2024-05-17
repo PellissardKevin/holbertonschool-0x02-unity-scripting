@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed = 1.0f;
     private int score = 0;
     private int health = 5;
     private Rigidbody playerBody;
@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Goal")
         {
             Debug.Log("You win!");
+        }
+
+        if (other.tag == "Teleporter")
+        {
+            Debug.Log("Teleporte player");
         }
     }
 
