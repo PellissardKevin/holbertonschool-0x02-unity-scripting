@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 0.1f;
     private int score = 0;
     private int health = 5;
     private Rigidbody playerBody;
